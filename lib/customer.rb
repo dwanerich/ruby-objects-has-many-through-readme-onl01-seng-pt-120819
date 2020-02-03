@@ -26,8 +26,7 @@ attr_accessor :name, :age
   end
 
     def waiters
-      binding.pry
-      meals.map do |meal|
+      meals.map do |meal| binding.pry
         meal.waiter
       end
   end
