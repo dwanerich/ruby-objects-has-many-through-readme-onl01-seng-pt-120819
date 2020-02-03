@@ -19,6 +19,7 @@ attr_accessor :name, :age
   end
 
   def meals
+    binding.pry
     Meal.all.select do |meal|
       meal.customer == self
     end
